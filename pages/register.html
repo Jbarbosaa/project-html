@@ -1,9 +1,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>MeuSite</title></head></head>
-<body style="background-image: url(img/back.jpg); background-size: cover; background-position: center; margin: 0;">
-<center style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+<title>Cadastro</title>
+</head>
+<body style="background-image: url(../img/back.jpg); background-size: cover; background-position: center; margin: 0;">
+<center style="display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px 0;">
 <div style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0px 0px 10px gray; text-align: center;">
 <form method="GET">
 <table style="margin: 0 auto;">
@@ -15,11 +16,11 @@
 <tr><td style="padding: 10px;">Data de Nascimento:</td><td style="padding: 10px;"><input type="date" name="nascimento"></td></tr>
 <tr><td style="padding: 10px;">Endereço:</td><td style="padding: 10px;"><input type="text" name="endereco" size="30" maxlength="30"></td></tr>
 <tr><td style="padding: 10px;">Cidade:</td><td style="padding: 10px;"><input type="text" name="cidade" size="30" maxlength="30"></td></tr>
-<tr><td style="padding: 10px;">UF:</td><td style="padding: 10px;"><select name("UF">
-    <option value("AC">AC</option>
-    <option value("AL">AL</option>
-    <option value("AP">AP</option>
-    <option value("AM">AM</option>
+<tr><td style="padding: 10px;">UF:</td><td style="padding: 10px;"><select name="uf">
+    <option value="AC">AC</option>
+    <option value="AL">AL</option>
+    <option value="AP">AP</option>
+    <option value="AM">AM</option>
     <option value="BA">BA</option>
     <option value="CE">CE</option>
     <option value="DF">DF</option>
@@ -54,16 +55,17 @@
     <option value="ti">TI</option>
     <option value="rh">RH</option>
 </select>
-<tr><td style="padding: 10px;">Cargo:</td><td style="padding: 10px;"><select name="Cargo">
+</td></tr>
+<tr><td style="padding: 10px;">Cargo:</td><td style="padding: 10px;"><select name="cargo">
     <option value="estagiario">Estagiário</option>
     <option value="analista">Analista</option>
     <option value="gerente">Gerente</option>
     <option value="diretor">Diretor</option>
-    <option value="Programador">Programador</option>
+    <option value="programador">Programador</option>
 </select>
 </td></tr>
 <tr><td colspan="2" style="text-align: center; padding: 10px;">
-<input type="submit" value="Envia">
+<input type="submit" value="Enviar">
 <input type="reset" value="Reset">
 </td></tr>
 </table>
