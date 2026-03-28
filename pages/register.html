@@ -1,22 +1,52 @@
-<html>
+﻿<html>
 <head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <meta charset="UTF-8">
 <title>Cadastro</title>
 </head>
-<body style="background-image: url(../img/back.jpg); background-size: cover; background-position: center; margin: 0;">
+<style>
+    body {
+        background-image: url(../img/back.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    div {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px gray;
+        text-align: center;
+    }
+
+    tr td {
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="date"], input[type="endereco"], input[type="cidade"], input[type="cep"], input[type="complemento"], input[type="usuario"], select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+</style>
+<body>
 <center style="display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px 0;">
-<div style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0px 0px 10px gray; text-align: center;">
+<div>
 <form method="GET">
 <table style="margin: 0 auto;">
 <tr><td colspan="2" style="text-align: center;"><h2>Register</h2></td></tr>
-<tr><td style="padding: 10px;">Nome:</td><td style="padding: 10px;"><input type="text" name="nome" size="30" maxlength="30"></td></tr>
-<tr><td style="padding: 10px;">Senha:</td><td style="padding: 10px;"><input type="password" name="senha" size="30" maxlength="30"></td></tr>
-<tr><td style="padding: 10px;">Email:</td><td style="padding: 10px;"><input type="email" name="email" size="30" maxlength="30"></td></tr>
-<tr><td style="padding: 10px;">Celular:</td><td style="padding: 10px;"><input type="tel" name="celular" size="30" maxlength="30"></td></tr>
-<tr><td style="padding: 10px;">Data de Nascimento:</td><td style="padding: 10px;"><input type="date" name="nascimento"></td></tr>
-<tr><td style="padding: 10px;">Endereço:</td><td style="padding: 10px;"><input type="text" name="endereco" size="30" maxlength="30"></td></tr>
-<tr><td style="padding: 10px;">Cidade:</td><td style="padding: 10px;"><input type="text" name="cidade" size="30" maxlength="30"></td></tr>
-<tr><td style="padding: 10px;">UF:</td><td style="padding: 10px;"><select name="uf">
+<tr><td >Nome:</td><td ><input type="text" name="nome" size="30" maxlength="30"></td></tr>
+<tr><td >Senha:</td><td ><input type="password" name="senha" size="30" maxlength="30"></td></tr>
+<tr><td >Email:</td><td ><input type="email" name="email" size="30" maxlength="30"></td></tr>
+<tr><td >Celular:</td><td ><input type="tel" name="celular" size="30" maxlength="30"></td></tr>
+<tr><td >Data de Nascimento:</td><td ><input type="date" name="nascimento"></td></tr>
+<tr><td >Endereço:</td><td ><input type="text" name="endereco" size="30" maxlength="30"></td></tr>
+<tr><td >Cidade:</td><td ><input type="text" name="cidade" size="30" maxlength="30"></td></tr>
+<tr><td >UF:</td><td ><select name="uf">
     <option value="AC">AC</option>
     <option value="AL">AL</option>
     <option value="AP">AP</option>
@@ -45,10 +75,10 @@
     <option value="SE">SE</option>
     <option value="TO">TO</option>
   </select></td></tr>
-<tr><td style="padding: 10px;">CEP:</td><td style="padding: 10px;"><input type="text" name="cep" size="30" maxlength="30"></td></tr>
-<tr><td style="padding: 10px;">Complemento:</td><td style="padding: 10px;"><input type="text" name="complemento" size="30" maxlength="30"></td></tr>
-<tr><td style="padding: 10px;">Usuário:</td><td style="padding: 10px;"><input type="text" name="usuario" size="30" maxlength="30"></td></tr>
-<tr><td style="padding: 10px;">Departamento:</td><td style="padding: 10px;">
+<tr><td > CEP:</td><td > <input type="text" name="cep" size="30" maxlength="30"></td></tr>
+<tr><td > Complemento:</td><td > <input type="text" name="complemento" size="30" maxlength="30"></td></tr>
+<tr><td > Usuário:</td><td > <input type="text" name="usuario" size="30" maxlength="30"></td></tr>
+<tr><td > Departamento:</td><td > 
 <select name="departamento">
     <option value="vendas">Vendas</option>
     <option value="marketing">Marketing</option>
@@ -56,7 +86,7 @@
     <option value="rh">RH</option>
 </select>
 </td></tr>
-<tr><td style="padding: 10px;">Cargo:</td><td style="padding: 10px;"><select name="cargo">
+<tr><td > Cargo:</td><td > <select name="cargo">
     <option value="estagiario">Estagiário</option>
     <option value="analista">Analista</option>
     <option value="gerente">Gerente</option>
@@ -74,3 +104,4 @@
 </center>
 </body>
 </html>
+
