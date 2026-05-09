@@ -33,10 +33,31 @@
     }
 
 </style>
+
+<script type="text/javascript">
+    function validarFormulario() {
+        var nome = document.forms[0]["nome"].value;
+        var senha = document.forms[0]["senha"].value;
+        var email = document.forms[0]["email"].value;
+        var celular = document.forms[0]["celular"].value;
+        var nascimento = document.forms[0]["nascimento"].value;
+        var endereco = document.forms[0]["endereco"].value;
+        var cidade = document.forms[0]["cidade"].value;
+        var cep = document.forms[0]["cep"].value;
+        var usuario = document.forms[0]["usuario"].value;
+
+        if (nome == "" || senha == "" || email == "" || celular == "" || nascimento == "" || endereco == "" || cidade == "" || cep == "" || usuario == "") {
+            alert("Por favor, preencha todos os campos.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
 <body>
 <center style="display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px 0;">
 <div>
-<form method="GET">
+<form method="GET" onsubmit="return validarFormulario();">
 <table style="margin: 0 auto;">
 <tr><td colspan="2" style="text-align: center;"><h2>Register</h2></td></tr>
 <tr><td >Nome:</td><td ><input type="text" name="nome" size="30" maxlength="30"></td></tr>
